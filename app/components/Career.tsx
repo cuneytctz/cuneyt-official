@@ -1,33 +1,47 @@
 "use client";
 
-import { useLanguage } from "../context/LanguageContext";
-
 export default function Career() {
-  const { t } = useLanguage();
-
   return (
-    <section className="section career" id="career">
-      <div className="career-card">
-        <div className="career-copy">
-          <p className="section-label">{t.career.label}</p>
+    <section className="projects-section" id="career">
+      <p className="section-label">MY PROJECTS</p>
 
-          <h2>{t.career.title}</h2>
+      <h2 className="projects-title">
+        Companies & Communities I Have Built
+      </h2>
 
-          <p>{t.career.description}</p>
-
+      <div className="projects-grid">
+        <div className="project-card">
+          <div className="project-icon">❄️</div>
+          <h3>CTZ GROUP</h3>
+          <p>
+            Industrial refrigeration solutions, sandwich panels, cold storage
+            rooms, engineering and turnkey projects.
+          </p>
           <a
             href="https://ctzgroup.kz"
             target="_blank"
             rel="noopener noreferrer"
             className="primary-button"
           >
-            {t.career.button}
+            Visit Website →
           </a>
         </div>
 
-        <div className="career-symbol">
-          <span>CTZ</span>
-          <small>SINCE 2003</small>
+        <div className="project-card">
+          <div className="project-icon">⚽</div>
+          <h3>ALTAY FC</h3>
+          <p>
+            Veteran football club bringing together friendship, leadership
+            and sportsmanship.
+          </p>
+          <a
+            href="https://altayfc.kz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="primary-button"
+          >
+            Visit Website →
+          </a>
         </div>
       </div>
     </section>
