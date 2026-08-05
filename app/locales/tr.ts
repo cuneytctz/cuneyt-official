@@ -19,14 +19,67 @@ const tr = {
     { number: "02", title: "Disiplin", text: "Başarı, her gün tekrarlanan doğru alışkanlıkların sonucudur." },
     { number: "03", title: "Cesaret", text: "Bazen ilk adımı atacak cesaret, bütün cevaplardan daha önemlidir." }
   ]},
-  career: { label: "KARİYER VE GİRİŞİMCİLİK", title: "İş hayatımın önemli bir parçası: CTZ Group", description: "CTZ Group ile endüstriyel soğutma, soğuk hava depoları, panel sistemleri ve uluslararası projeler alanında çalışmalar yürütüyorum.", button: "CTZ Group web sitesini ziyaret et" },
-  gallery: { label: "HAYATIN İÇİNDEN", title: "İşin ötesinde, hayatın kendisi.", description: "Spor, doğa, yolculuklar ve yıllar içinde biriken anılar...", nature: { label: "DOĞA", title: "Kendimi bulduğum yer", text: "Şehrin gürültüsünden uzaklaşıp yeniden düşünmek." }, life: { label: "YOLCULUK", title: "Her gün yeniden başlamak", text: "Geçmişten öğrenip geleceğe güvenle yürümek." } },
-  contact: { label: "İLETİŞİM", title: "Yeni fikirler ve değerli bağlantılar için.", description: "Profesyonel iş birlikleri, uluslararası projeler veya fikir alışverişi için benimle iletişime geçebilirsiniz.", emailButton: "E-posta Gönder", linkedinButton: "LinkedIn" },
-  articles: { label: "YAZILARIM", title: "Düşünceler, tecrübeler ve hayata dair notlar.", button: "Yakında →", items: [
-    { category: "Hayata Dair", title: "İnsan hedefleri kadar büyür", text: "Hedef koymanın, sabrın ve kendine inanmanın yaşam üzerindeki etkileri." },
-    { category: "Girişimcilik", title: "Yeniden başlama cesareti", text: "Zorlukların ardından tekrar ayağa kalkmak ve yeni bir yol kurmak üzerine." },
-    { category: "Disiplin", title: "Sporun iş hayatına öğrettikleri", text: "Takım çalışması, mücadele, sabır ve süreklilik arasındaki güçlü bağ." }
-  ]},
+  career: {
+  label: "GİRİŞİMLERİM",
+  title: "Şirketler ve Projeler",
+
+  ctzTitle: "CTZ GROUP",
+  ctzDescription:
+    "Endüstriyel soğutma, soğuk hava depoları, sandviç panel üretimi ve anahtar teslim projeler.",
+
+  altayTitle: "ALTAY FC",
+  altayDescription:
+    "Dostluk, disiplin ve futbol sevgisini bir araya getiren veteran futbol kulübü.",
+
+  button: "Web Sitesini Ziyaret Et",
+},
+gallery: {
+  label: "HAYATIN İÇİNDEN",
+  title: "İşin ötesinde, hayatın kendisi.",
+  description:
+    "Spor, doğa, yolculuklar ve yıllar içinde biriken anılar...",
+  nature: {
+    label: "DOĞA",
+    title: "Kendimi bulduğum yer",
+    text: "Şehrin gürültüsünden uzaklaşıp yeniden düşünmek.",
+  },
+  life: {
+    label: "YOLCULUK",
+    title: "Her gün yeniden başlamak",
+    text: "Geçmişten öğrenip geleceğe güvenle yürümek.",
+  },
+},
+
+articles: {
+  label: "YAZILARIM",
+  title: "Düşünceler, tecrübeler ve hayata dair notlar.",
+  button: "Yakında →",
+  items: [
+    {
+      category: "Hayata Dair",
+      title: "İnsan hedefleri kadar büyür",
+      text: "Hedef koymanın, sabrın ve kendine inanmanın yaşam üzerindeki etkileri.",
+    },
+    {
+      category: "Girişimcilik",
+      title: "Yeniden başlama cesareti",
+      text: "Zorlukların ardından tekrar ayağa kalkmak ve yeni bir yol kurmak üzerine.",
+    },
+    {
+      category: "Disiplin",
+      title: "Sporun iş hayatına öğrettikleri",
+      text: "Takım çalışması, mücadele, sabır ve süreklilik arasındaki güçlü bağ.",
+    },
+  ],
+},
+contact: {
+  label: "İLETİŞİM",
+  title: "Yeni fikirler ve değerli bağlantılar için.",
+  description:
+    "Profesyonel iş birlikleri, uluslararası projeler veya fikir alışverişi için benimle iletişime geçebilirsiniz.",
+  emailButton: "E-posta Gönder",
+  linkedinButton: "LinkedIn",
+},
   footer: { slogan: "İstanbul’da başlayan, Almatı’da devam eden bir hayat yolculuğu.", copyright: "Cüneyt Tanrıverdi. Tüm hakları saklıdır." },
   stats: { kazakhstan: "Kazakistan’da Yaşam", experience: "Yıllık İş Deneyimi", projects: "Tamamlanan Proje", cities: "Çalışılan Şehir" },
   quotes: { mindset: "İnsan kendi zihnindeki engelleri kaldırdığı gün gerçek potansiyelini keşfeder.", natureLabel: "HAYATA DAİR", nature: "Bazı insanlar doğada huzur bulur, bazıları ise kendini. Ben, kendimi buldukça huzur bulduğum için doğayı bir başka seviyorum." },

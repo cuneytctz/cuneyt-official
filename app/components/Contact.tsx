@@ -4,6 +4,7 @@ import { useLanguage } from "../context/LanguageContext";
 
 export default function Contact() {
   const { t } = useLanguage();
+  
 
   return (
     <section className="contact" id="contact">

@@ -19,14 +19,67 @@ const en = {
     { number: "02", title: "Discipline", text: "Success is the result of the right habits repeated every day." },
     { number: "03", title: "Courage", text: "Sometimes the courage to take the first step matters more than having every answer." }
   ]},
-  career: { label: "CAREER & ENTREPRENEURSHIP", title: "An important part of my career: CTZ Group", description: "Through CTZ Group, I work in industrial refrigeration, cold storage, panel systems and international projects.", button: "Visit the CTZ Group website" },
-  gallery: { label: "LIFE", title: "Beyond business, life itself.", description: "Sport, nature, travel and memories collected over the years...", nature: { label: "NATURE", title: "Where I find myself", text: "Stepping away from the noise of the city to think again." }, life: { label: "JOURNEY", title: "Starting again every day", text: "Learning from the past and walking confidently toward the future." } },
-  contact: { label: "CONTACT", title: "For new ideas and meaningful connections.", description: "Contact me for professional collaborations, international projects or simply to exchange ideas.", emailButton: "Send Email", linkedinButton: "LinkedIn" },
-  articles: { label: "ARTICLES", title: "Thoughts, experiences and notes on life.", button: "Coming soon →", items: [
-    { category: "Life", title: "People grow as big as their goals", text: "The impact of goals, patience and self-belief on life." },
-    { category: "Entrepreneurship", title: "The courage to start again", text: "Standing up after difficult times and building a new path." },
-    { category: "Discipline", title: "What sport teaches business", text: "The strong connection between teamwork, struggle, patience and consistency." }
-  ]},
+  career: {
+  label: "MY VENTURES",
+  title: "Companies and Projects",
+
+  ctzTitle: "CTZ GROUP",
+  ctzDescription:
+    "Industrial refrigeration, cold storage rooms, sandwich panel production and turnkey projects.",
+
+  altayTitle: "ALTAY FC",
+  altayDescription:
+    "A veteran football club built around friendship, discipline and a passion for football.",
+
+  button: "Visit Website",
+},
+gallery: {
+  label: "LIFE MOMENTS",
+  title: "Beyond work — life itself.",
+  description:
+    "Sport, nature, journeys and memories collected over the years...",
+  nature: {
+    label: "NATURE",
+    title: "Where I find myself",
+    text: "Stepping away from the noise of the city and thinking again.",
+  },
+  life: {
+    label: "JOURNEY",
+    title: "Beginning again every day",
+    text: "Learning from the past and moving toward the future with confidence.",
+  },
+},
+
+articles: {
+  label: "MY ARTICLES",
+  title: "Thoughts, experiences and notes about life.",
+  button: "Coming Soon →",
+  items: [
+    {
+      category: "Life",
+      title: "People grow with their goals",
+      text: "The impact of setting goals, patience and believing in yourself.",
+    },
+    {
+      category: "Entrepreneurship",
+      title: "The courage to begin again",
+      text: "Rising after difficult times and building a new path.",
+    },
+    {
+      category: "Discipline",
+      title: "What sport taught me about business",
+      text: "The connection between teamwork, struggle, patience and consistency.",
+    },
+  ],
+},
+contact: {
+  label: "CONTACT",
+  title: "For new ideas and valuable connections.",
+  description:
+    "You can contact me for professional collaborations, international projects or exchanging ideas.",
+  emailButton: "Send Email",
+  linkedinButton: "LinkedIn",
+},
   footer: { slogan: "A life journey that began in Istanbul and continues in Almaty.", copyright: "Cuneyt Tanriverdi. All rights reserved." },
   stats: { kazakhstan: "Years in Kazakhstan", experience: "Years of Experience", projects: "Completed Projects", cities: "Cities Worked In" },
   quotes: { mindset: "A person discovers their true potential when they remove the barriers within their own mind.", natureLabel: "LIFE", nature: "Some people find peace in nature, while others find themselves. I love nature differently because finding myself brings me peace." },

@@ -35,7 +35,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const setLanguage = (lang: Language) => setLanguageState(lang);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t: languages[language] }}>
+    <LanguageContext.Provider
+  value={{
+    language,
+    setLanguage,
+    t: languages[language] as typeof tr,
+  }}
+>
       {children}
     </LanguageContext.Provider>
   );
