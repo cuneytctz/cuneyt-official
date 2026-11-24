@@ -15,6 +15,120 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "gurbete-geldim-ozumu-buldum",
+    year: "2026",
+    category: {
+      tr: "Hayata Dair",
+      en: "Reflections on Life",
+      ru: "О жизни",
+      kz: "Өмір туралы"
+    },
+    title: {
+      tr: "Gurbete Geldim, Özümü Buldum",
+      en: "Far from Home, I Found My Roots",
+      ru: "Вдали от дома я обрёл свои корни",
+      kz: "Жат жерге келіп, өз тамырымды таптым"
+    },
+    excerpt: {
+      tr: "İstanbul'dan Almatı'ya uzanan 23 yıllık bir hayat yolculuğu. Dostluk, aidiyet, kayıplar ve hayata dair düşünceler.",
+      en: "A 23-year journey from Istanbul to Almaty. Reflections on friendship, belonging, loss and life.",
+      ru: "23-летний жизненный путь из Стамбула в Алматы. Размышления о дружбе, родных корнях, потерях и жизни.",
+      kz: "Ыстанбұлдан Алматыға дейінгі 23 жылдық өмір жолы. Достық, туған тамыр, жоғалтулар және өмір туралы ойлар."
+    },
+    lead: {
+      tr: "2003 yılında, kısa süreliğine çıktığım bir yolda kendimi Kazakistan'ın Almatı şehrinde buldum.",
+      en: "In 2003, what began as a short journey brought me to Almaty, Kazakhstan.",
+      ru: "В 2003 году, отправившись в короткую поездку, я оказался в Алматы, Казахстан.",
+      kz: "2003 жылы қысқа мерзімге жолға шығып, Қазақстанның Алматы қаласынан бір-ақ шықтым."
+    },
+    paragraphs: {
+      tr: [
+        "Memleketten 5.600 kilometre uzakta, Çin sınırına yakın bir coğrafyada yaşamak kolay değildi. Yine de alışırım dedim. Ama daha sekiz ay dolmadan babamı kaybettim. Gurbete alışamamışken bir de yetim kalmıştım.",
+        "Tanrı Dağları'nın eteklerinde yürürken içimde bir boşluk vardı ama bir kolumda da umut.",
+        "Önce eşimle tanıştım, sonra güzel dostlar, abiler edindim. Hayat beni yavaş yavaş bu topraklara bağladı.",
+        "Okuduğum kitaplar sayesinde Türk tarihinin derinliklerine daldım. Tomris Hatun'dan Ahmet Yesevi'ye, Altın Adam'dan Sakalara kadar uzanan bir yolculuğa çıkmıştım. Hepsi kulağıma, burada gurbette değil, özümde olduğumu fısıldıyordu.",
+        "Zaman hızla geçti ve 2026 yılının ortasına geldik. Kazakistan'da binlerce insan tanımış, yüz binlerce anı biriktirmişim. Ama bu yolculukta yüzlerce güzel insanı da toprağa vermişim.",
+        "Artık bir anıyı anlatırken “rahmetli” diye başlıyorum cümlelerime.",
+        "“Alatau Oteli'nde rahmetli Metin abiyle şöyle olmuştu…”",
+        "“Rahmetli Yusuf abiyle sabaha kadar çalışmıştık…”",
+        "“2015 yılında ortak iş yaptığım rahmetli Ümit abiyle ve rahmetli Askar'la ne hayaller kurmuştuk…” diyeceğim yarınki cümlelerimde.",
+        "Keşke resimlerle anları ölümsüzleştirdiğimiz gibi, o anların içindeki güzel insanları da ölümsüz kılabilsek.",
+        "Ama biliyorum ki yaşam gibi ölüm de bu dünyanın gerçeği.",
+        "Bazen düşünüyorum; bir gün bizim için de “Rahmetli şöyle derdi…” diyecekler.",
+        "O yüzden tek dileğim; güzel anılmak, onurlu bir hayatın ardından hayır dualarıyla uğurlanmak.",
+        "Yarına çıkma garantimiz yokken, incir çekirdeğini doldurmayacak meseleler yüzünden kalp kırmak ne kadar anlamsız hâlbuki.",
+        "Bu yüzden bugüne kadar istemeden kırdığım bir gönül varsa af dilerim. Herkese hakkım helal olsun. Farkında olmadan kalbini kırdığım biri varsa bana bir işaret versin. Gönlünü almak için elimden gelenin fazlasını yaparım.",
+        "Bir gün bu topraklarda son nefesimi verirsem, mezarım da burada olsun isterim.",
+        "Bırakın ruhum, Türkistan coğrafyasında, Ahmet Yesevi dergâhının manevi ikliminde özgürce dolaşsın.",
+        "Birisi bana “Hayatındaki en ilginç karar neydi?” diye sorarsa cevabım:",
+        "“İsteksizce geldiğim topraklardan, öldüğümde bile dönmek istemememdir.” olacaktır."
+      ],
+      en: [
+        "Living 5,600 kilometres from home, in a land close to the Chinese border, was not easy. Still, I told myself I would get used to it. But before eight months had passed, I lost my father. Before I could adjust to life abroad, I had lost him.",
+        "Walking at the foot of the Tian Shan Mountains, I carried an emptiness within me, but I also carried hope.",
+        "First, I met my wife. Then I found wonderful friends and people who became like older brothers to me. Gradually, life bound me to this land.",
+        "Through the books I read, I explored the depths of Turkic history, from Queen Tomyris to Ahmad Yasawi, from the Golden Man to the Saka people. They all seemed to whisper that I was not in a foreign land, but among my own roots.",
+        "Time passed quickly, and we reached the middle of 2026. I had met thousands of people in Kazakhstan and collected hundreds of thousands of memories. Yet along the way, I had also laid hundreds of wonderful people to rest.",
+        "Now, when I tell a story, I often begin with the words “the late”.",
+        "“Something happened at the Alatau Hotel with my late friend Metin…”",
+        "“My late friend Yusuf and I worked until dawn…”",
+        "“What dreams we had with my late business partners Ümit and Askar in 2015…” These are the words I will use tomorrow.",
+        "I wish we could make the wonderful people in our memories immortal, just as photographs preserve those moments.",
+        "But I know that death, like life, is a reality of this world.",
+        "Sometimes I think that one day people will speak of us in the same way: “He used to say…”",
+        "My only wish is to be remembered fondly and, after an honourable life, to be sent on my final journey with prayers and blessings.",
+        "When tomorrow is not guaranteed, how meaningless it is to hurt one another over trivial matters.",
+        "If I have ever unintentionally hurt anyone, I ask for forgiveness. I hold no claims against anyone. If I have unknowingly broken someone's heart, I hope they will let me know. I will do everything I can, and more, to make amends.",
+        "If I take my last breath on this land one day, I would like my grave to be here too.",
+        "Let my soul wander freely across Turkestan, in the spiritual atmosphere of Ahmad Yasawi's sanctuary.",
+        "If someone asks me what the most unusual decision of my life was, my answer will be:",
+        "“Coming reluctantly to a land that I no longer wish to leave, even in death.”"
+      ],
+      ru: [
+        "Жить в 5600 километрах от родины, недалеко от границы с Китаем, было непросто. Но я говорил себе, что привыкну. Однако не прошло и восьми месяцев, как я потерял отца. Не успев привыкнуть к жизни вдали от дома, я остался без него.",
+        "Гуляя у подножия Тянь-Шаня, я ощущал пустоту в душе, но вместе с ней во мне жила надежда.",
+        "Сначала я встретил свою супругу, затем обрёл замечательных друзей и людей, ставших мне старшими братьями. Постепенно жизнь связала меня с этой землёй.",
+        "Благодаря книгам я погрузился в глубины истории тюркского мира — от царицы Томирис до Ахмеда Ясави, от Золотого человека до саков. Все они словно шептали мне, что я не на чужбине, а среди своих корней.",
+        "Время пролетело незаметно, и наступила середина 2026 года. В Казахстане я познакомился с тысячами людей и накопил сотни тысяч воспоминаний. Но за эти годы мне пришлось проводить в последний путь и сотни прекрасных людей.",
+        "Теперь, рассказывая о прошлом, я всё чаще начинаю свои истории со слова «покойный».",
+        "«Однажды в гостинице Алатау с покойным Метином произошла такая история…»",
+        "«Мы с покойным Юсуфом работали до самого утра…»",
+        "«Какие мечты были у нас с покойными Умитом и Аскаром, с которыми мы вместе работали в 2015 году…» — так я буду рассказывать завтра.",
+        "Как бы мне хотелось, чтобы мы могли увековечить не только мгновения на фотографиях, но и прекрасных людей, которые были рядом с нами.",
+        "Но я знаю, что смерть, как и жизнь, является реальностью этого мира.",
+        "Иногда я думаю, что однажды и о нас скажут: «А покойный говорил…»",
+        "Поэтому моё единственное желание — остаться в доброй памяти людей и после достойно прожитой жизни быть провожённым с молитвами и благословениями.",
+        "Когда никто не может гарантировать нам завтрашний день, как бессмысленно обижать друг друга из-за пустяков.",
+        "Если я когда-либо невольно кого-то обидел, прошу прощения. Я всех прощаю и ни к кому не держу обиды. Если я неосознанно ранил чьё-то сердце, пусть этот человек даст мне знать. Я сделаю всё возможное и даже больше, чтобы загладить свою вину.",
+        "Если однажды я сделаю свой последний вдох на этой земле, я хотел бы, чтобы и моя могила была здесь.",
+        "Пусть моя душа свободно странствует по земле Туркестана, в духовной атмосфере обители Ахмеда Ясави.",
+        "Если кто-нибудь спросит меня, какое решение в моей жизни было самым необычным, я отвечу:",
+        "«Я не хочу покидать даже после смерти землю, на которую когда-то приехал без особого желания»."
+      ],
+      kz: [
+        "Туған жерден 5600 шақырым алыста, Қытай шекарасына жақын өлкеде өмір сүру оңай болған жоқ. Дегенмен үйренермін дедім. Бірақ сегіз ай өтпей жатып әкемнен айырылдым. Жат жерге үйреніп үлгермей, әкесіз қалдым.",
+        "Тәңір тауларының етегінде серуендеп жүргенде жан дүниемде бос кеңістік бар еді, бірақ үмітімді де жоғалтпадым.",
+        "Алдымен жұбайыммен таныстым, кейін жақсы достар, ағадай болған азаматтар таптым. Өмір мені біртіндеп осы жерге бауыр басқызды.",
+        "Оқыған кітаптарым арқылы түркі тарихының тереңіне бойладым. Томирис патшайымнан Қожа Ахмет Ясауиге, Алтын адамнан сақтарға дейінгі тарихпен таныстым. Олардың бәрі маған бұл жерде жат жұртта емес, өз тамырымның ортасында жүргенімді сыбырлағандай болды.",
+        "Уақыт зымырап өтіп, 2026 жылдың ортасына да жеттік. Қазақстанда мыңдаған адаммен танысып, жүз мыңдаған естелік жинаппын. Бірақ осы жолда жүздеген жақсы адамды ақтық сапарға шығарып салдым.",
+        "Енді естелік айтқанда сөзімді жиі «марқұм» деп бастаймын.",
+        "«Алатау қонақүйінде марқұм Метин ағамен осындай оқиға болған еді…»",
+        "«Марқұм Юсуф ағамен таң атқанша жұмыс істеген едік…»",
+        "«2015 жылы бірге кәсіп жасаған марқұм Үміт ағамен және марқұм Асқармен қандай армандар құрған едік…» — деп ертең еске алатын боламын.",
+        "Суреттер арқылы сәттерді мәңгілікке сақтағанымыздай, сол сәттердегі жақсы адамдарды да мәңгілік ете алсақ қой.",
+        "Бірақ өмір сияқты өлім де осы дүниенің ақиқаты екенін білемін.",
+        "Кейде ойлаймын: бір күні біз туралы да «Марқұм осылай айтатын еді…» дейтін болады.",
+        "Сондықтан жалғыз тілегім — жақсы атпен есте қалу, абыройлы ғұмырдан кейін ақ батамен, дұғамен шығарып салыну.",
+        "Ертеңгі күнге ешкім кепілдік бере алмайтын кезде болмашы нәрселер үшін біреудің көңілін қалдыру қандай мағынасыз.",
+        "Осы күнге дейін байқаусызда біреудің көңілін қалдырған болсам, кешірім сұраймын. Барлығына ақым адал. Білмей біреудің жүрегін жаралаған болсам, маған білдірсін. Көңілін табу үшін қолымнан келгеннің бәрін, тіпті одан да артығын жасаймын.",
+        "Бір күні осы топырақта соңғы демімді алсам, қабірімнің де осында болғанын қалаймын.",
+        "Рухым Түркістан жерінде, Қожа Ахмет Ясауи кесенесінің рухани әлемінде еркін кезсін.",
+        "Біреу менен өмірімдегі ең ерекше шешімім қандай болғанын сұраса, жауабым:",
+        "«Бір кездері құлықсыз келген жерден, дүниеден өткенде де кеткім келмеуі» болар еді."
+      ]
+    }
+  },
+  {
     slug: "2003-kazakistana-ilk-gelisim",
     year: "2003",
     category: { tr: "Hayat Hikâyem", en: "My Life Story", ru: "Моя история", kz: "Өмір тарихым" },
