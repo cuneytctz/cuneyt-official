@@ -9,6 +9,7 @@ export default function Gallery() {
   const { t } = useLanguage();
   const [photos, setPhotos] = useState<string[]>([]);
   const [active, setActive] = useState<number | null>(null);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     fetch("/api/gallery")
@@ -23,14 +24,18 @@ export default function Gallery() {
   }, []);
 
   useEffect(() => {
-    if (active === null) return;
+    if (active === null || !photos.length) return;
 
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setActive(null);
       if (e.key === "ArrowRight")
-        setActive((i) => i === null ? null : (i + 1) % photos.length);
+        setActive((i) =>
+          i === null ? null : (i + 1) % photos.length
+        );
       if (e.key === "ArrowLeft")
-        setActive((i) => i === null ? null : (i - 1 + photos.length) % photos.length);
+        setActive((i) =>
+          i === null ? null : (i - 1 + photos.length) % photos.length
+        );
     };
 
     window.addEventListener("keydown", handleKey);
@@ -43,6 +48,8 @@ export default function Gallery() {
     };
   }, [active, photos.length]);
 
+  const visiblePhotos = showAll ? photos : photos.slice(0, 12);
+
   return (
     <section className="life-gallery" id="gallery">
       <div className="life-gallery-heading">
@@ -54,7 +61,7 @@ export default function Gallery() {
       </div>
 
       <div className="photo-grid">
-        {photos.map((photo, index) => (
+        {visiblePhotos.map((photo, index) => (
           <button
             type="button"
             className="photo-card"
@@ -64,13 +71,41 @@ export default function Gallery() {
             <Image
               src={photo}
               alt={`Gallery ${index + 1}`}
-              fill
+              width={800}
+              height={800}
               sizes="(max-width: 780px) 50vw, 25vw"
-              style={{ objectFit: "cover" }}
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+              }}
             />
           </button>
         ))}
       </div>
+
+      {photos.length > 12 && (
+        <div className="gallery-more">
+          <button
+            type="button"
+            className="more-button"
+            onClick={() => {
+              setShowAll(!showAll);
+              if (showAll) {
+                document
+                  .getElementById("gallery")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            aria-label={showAll ? "Show fewer photos" : "Show all photos"}
+            aria-expanded={showAll}
+          >
+            {showAll ? "−" : "+"}{" "}
+            {showAll ? "12" : photos.length}
+            {" "} / {" "}{photos.length}
+          </button>
+        </div>
+      )}
 
       {active !== null && photos[active] && (
         <div
@@ -93,7 +128,9 @@ export default function Gallery() {
             aria-label="Previous photo"
             onClick={(e) => {
               e.stopPropagation();
-              setActive((active - 1 + photos.length) % photos.length);
+              setActive(
+                (active - 1 + photos.length) % photos.length
+              );
             }}
           >
             ‹
@@ -130,27 +167,53 @@ export default function Gallery() {
       )}
 
       <style jsx>{`
+        #gallery {
+          scroll-margin-top: 110px;
+        }
+
         .photo-grid {
-          display: grid;
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-          gap: 16px;
+          column-count: 4;
+          column-gap: 16px;
           margin-top: 30px;
         }
 
         .photo-card {
-          position: relative;
-          aspect-ratio: 4 / 3;
-          overflow: hidden;
-          border-radius: 12px;
-          border: none;
+          display: block;
+          width: 100%;
+          break-inside: avoid;
+          margin: 0 0 16px;
           padding: 0;
+          border: none;
+          border-radius: 12px;
+          overflow: hidden;
           background: #172033;
           cursor: pointer;
-          transition: transform 0.3s ease;
+          transition: transform 0.25s ease;
         }
 
         .photo-card:hover {
-          transform: translateY(-4px);
+          transform: scale(1.02);
+        }
+
+        .gallery-more {
+          display: flex;
+          justify-content: center;
+          margin-top: 30px;
+        }
+
+        .more-button {
+          border: 1px solid #e63946;
+          background: transparent;
+          color: white;
+          padding: 14px 36px;
+          border-radius: 30px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background 0.25s ease;
+        }
+
+        .more-button:hover {
+          background: #e63946;
         }
 
         .photo-lightbox {
@@ -206,10 +269,20 @@ export default function Gallery() {
           font-size: 15px;
         }
 
+        @media (max-width: 1000px) {
+          .photo-grid {
+            column-count: 3;
+          }
+        }
+
         @media (max-width: 780px) {
           .photo-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 10px;
+            column-count: 2;
+            column-gap: 10px;
+          }
+
+          .photo-card {
+            margin-bottom: 10px;
           }
 
           .photo-full {
